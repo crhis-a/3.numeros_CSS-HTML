@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Números</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Ingreso de Números</h1>
+
+        <!-- Área para ingresar los tres números -->
+        <div class="ingreso-datos">
+            <label for="numero1">Introduce el primer número:</label>
+            <textarea id="numero1" rows="1"></textarea>
+
+            <label for="numero2">Introduce el segundo número:</label>
+            <textarea id="numero2" rows="1"></textarea>
+
+            <label for="numero3">Introduce el tercer número:</label>
+            <textarea id="numero3" rows="1"></textarea>
+        </div>
+
+        <!-- Alerta para mostrar mensajes al usuario -->
+        <div id="alerta" class="alert"></div>
+
+        <!-- Botón para imprimir los resultados -->
+        <button onclick="procesarNumeros()">Imprimir</button>
+
+        <!-- Área para mostrar los resultados -->
+        <h2>Resultado Ordenado:</h2>
+        <textarea id="resultado" rows="4" readonly></textarea>
+    </div>
+
+    <script src="3numeros.js"></script>
+</body>
+</html>
